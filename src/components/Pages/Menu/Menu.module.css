@@ -1,0 +1,60 @@
+.menuList {
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.titleContainer {
+  margin: 20px;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  font-size: 1.5rem;
+}
+
+.menu {
+  background: #f7e1ae;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  height: 100%;
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 20px;
+}
+
+.filter {
+  font-family: 'Poppins', sans-serif;
+}
+
+.filterOptions {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .menu {
+    max-width: 90%;
+    display: flex;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    max-width: 90%;
+  }
+}

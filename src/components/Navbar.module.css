@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Poppins&display=swap');
+
+.navbar {
+  margin: 0 auto;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #f7e1ae;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  gap: 20px;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.list a:visited {
+  color: white;
+}
+
+.list a:hover {
+  color: red !important;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar {
+    max-width: 100%;
+    height: 100px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .nav {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,59 @@
+.card {
+  height: 370px;
+  width: 300px;
+  background: white;
+  color: black;
+  overflow: hidden;
+  border: 2px solid gray;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardImg {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.cardImg img {
+  height: inherit;
+  width: inherit;
+}
+
+.cardDescription p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.cardDescription {
+  height: 150px;
+  font-family: 'Courgette', cursive;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.price {
+  font-weight: bold;
+  color: #ad5502;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .card {
+    height: 200px;
+    width: 80%;
+    border-radius: 5px;
+  }
+
+  .cardImg {
+    height: 100px;
+    width: 100%;
+  }
+
+  .cardDescription {
+    font-size: 0.5rem;
+  }
+}

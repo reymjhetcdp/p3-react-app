@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Poppins&display=swap');
+
+.addButton {
+  margin: 20px;
+  font-size: 1rem;
+  background: #8a2b06;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background: #654e92;
+  color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  input {
+    height: 15px;
+    width: 20px;
+    font-size: 0.5rem;
+  }
+
+  .addButton {
+    margin: 2px;
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+}

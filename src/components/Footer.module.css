@@ -1,0 +1,15 @@
+.footer {
+  background: #f7e1ae;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+}

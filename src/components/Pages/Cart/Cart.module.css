@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Poppins&display=swap');
+
+.checkout {
+  padding: 20px;
+  margin: 20px auto;
+  height: 100%;
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background: #f7e1ae;
+  color: black;
+}
+
+.cartTitle {
+  font-family: 'Courgette', cursive;
+  font-size: 2rem;
+}
+
+.cartInfo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cartItem {
+  max-height: 400px;
+  width: 400px;
+  overflow: auto;
+}
+
+.cartItem ul {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid #8a2b06;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.order {
+  padding: 10px;
+  border: none;
+  background: #654e92;
+  color: white;
+  font-size: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .checkout {
+    height: 100%;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .cartTitle {
+    font-size: 1rem;
+  }
+
+  .cartInfo {
+    gap: 0px;
+  }
+
+  .cartInfo h2 {
+    font-size: 1.2rem;
+  }
+
+  .cartInfo ul {
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 0.8rem;
+  }
+
+  .order {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .checkout {
+    height: 100%;
+    width: 60%;
+  }
+
+  .cartTitle {
+    font-size: 1.2rem;
+  }
+
+  .cartInfo {
+    font-size: 1rem;
+  }
+}
